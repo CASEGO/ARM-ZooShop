@@ -76,7 +76,7 @@ namespace ARM_zoo
             string query = "INSERT INTO Товар ([Код], [Наименование], [Категория], [Стоимость], [Количество], [Поставщик]) VALUES (" + kod + ",'" + Name + "','" + category + "', '" + Price + "','" + kolvo + "','" + supp + "')";
             OleDbCommand command = new OleDbCommand(query, myConnection);
             command.ExecuteNonQuery();
-            MessageBox.Show("Данные обновлены!"); //string query = "INSERT INTO Сотрудники VALUES (" + kod + ", '" + Name + "', " + Time + ", " + ZP + ", " + Phone + "," + Status + "," + Stavka + (" + kod + ", '" + Name + "', " + Time + "," + ZP + "," + Phone + "," + Status + "," + Stavka + ")
+            MessageBox.Show("Данные обновлены!");
             this.товарTableAdapter.Fill(this.aRMDataSet.Товар);
             textBox1.Clear();
             textBox2.Clear(); 
